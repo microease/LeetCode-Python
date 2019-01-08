@@ -5,7 +5,6 @@
 nums = [2, 7, 11, 15]
 target = 9
 
-
 # class Solution:
 #     def twoSum(self, nums, target):
 #         for i in range(len(nums)):
@@ -16,9 +15,11 @@ target = 9
 # s = Solution()
 # print(s)
 res = enumerate(nums)
-for i,j in res:
-    print(i,j)
+for i, j in res:
+    print(i, j)
 print(res)
+
+
 class Solution:
     def twoSum(self, nums, target):
         hashmap = {}
@@ -28,4 +29,6 @@ class Solution:
                 return [hashmap[another_num], index]
             hashmap[num] = index
         return None
+
+
 s = Solution()
